@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/tvHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#000"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/Shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text=" Shake your mobile for Accurate Results"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#39A2B1"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageViewCompass1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/pointed_down1" />
+
+    <ImageView
+        android:id="@+id/imageViewCompass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewCompass1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/modified_pointer" />
+
+
+    <TextView
+        android:id="@+id/tvHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading"
+        android:layout_centerHorizontal="true"
+        android:text="Match Arrow Head"
+        android:textColor="#39A2B1"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/tvHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Shake"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text=""
+        android:textColor="#98B300"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/color_changer2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tvHeading"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EC4300"
+        android:text=""
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

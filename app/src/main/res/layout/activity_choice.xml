@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.al_muntaqimcrescent2017.salah.Choice">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/Qtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:text=" لآ اِلَهَ اِلّا اللّهُ مُحَمَّدٌ رَسُوُل اللّهِ "
+                android:textColor="#39A2B1"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/salah"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/masjid_finder"
+                android:layout_alignStart="@+id/masjid_finder"
+                android:layout_below="@+id/Qtext"
+                android:layout_marginTop="51dp"
+                android:background="#FFCF5B"
+                android:onClick="changeState"
+                android:text="Salah Timings Today"
+                android:textColor="#39A2B1" />
+
+
+            <Button
+                android:id="@+id/masjid_finder"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/salah"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#FFCF5B"
+                android:onClick="changeState"
+                android:text="Masjid near me"
+                android:textColor="#39A2B1" />
+
+
+            <Button
+                android:id="@+id/masjid_finder1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/masjid_finder"
+                android:layout_alignStart="@+id/masjid_finder"
+                android:layout_below="@+id/masjid_finder"
+                android:layout_marginTop="30dp"
+                android:background="#FFCF5B"
+                android:onClick="changeState"
+                android:text="Find the Qibla"
+                android:textColor="#39A2B1" />
+
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/masjid_finder1"
+                android:layout_alignStart="@+id/masjid_finder1"
+                android:layout_below="@+id/masjid_finder1"
+                android:layout_marginTop="32dp"
+                android:background="#FFCF5B"
+                android:text="Exit"
+                android:onClick="changeState"
+                android:textColor="#39A2B1" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:layout_margin="20dp"
+                app:borderWidth="3dp"
+                app:rippleColor="@color/colorAccent"
+                app:srcCompat="@android:drawable/ic_menu_share"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="328dp"
+                tools:layout_editor_absoluteY="455dp" />
+
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webView1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</RelativeLayout>
